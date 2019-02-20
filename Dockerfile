@@ -3,7 +3,7 @@ FROM openjdk:8
 LABEL maintainer="Anton Kozik <pazitron@gmail.com>"
 
 RUN apt-get update
-RUN apt-get install -y tmux htop maven
+RUN apt-get install -y maven
 
 # Install Node - allows for scanning of Typescript
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
